@@ -158,15 +158,15 @@ Proyecto::menu(){
 			system("cls");
 			cout<<"Seguro que deseas salir? "<<endl;
 			cout<<"1. Si"<<endl;
-		    cout<<"2. No" ;
+		    cout<<"2. No"<<endl;
 		    cin>>op;
 		    if(op==1){
-		    	return 0;
+		    	exit(EXIT_FAILURE);
 			}
 			else{
-				return main();
+				system("cls");
+				menu();
 			}
-		    
 		break;
 		
 		
